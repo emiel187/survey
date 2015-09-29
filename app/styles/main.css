@@ -1,0 +1,31 @@
+.header {
+  min-height: 400px;
+  background: #909090 url('https://static.pexels.com/photos/7545/landscape-sunset-beach-sand.jpg');
+  color: #FFF;
+  margin-bottom: 50px;
+}
+.header .well {
+  border: 1px solid black;
+  border-radius: 4px;
+  padding: 20px 5px;
+  margin-top: 50px;
+}
+.typeforms .typeform {
+  width: 100%;
+  height: 100%;
+  height: 100vh;
+  width: 100vw;
+  border: none;
+  overflow: hidden;
+}
+
+.typeforms .card {
+  cursor: pointer;
+}
+.typeforms .col-md-4 .card {
+  min-height: 300px;
+}
+
+.footer {
+
+}
