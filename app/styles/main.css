@@ -1,16 +1,32 @@
+html, body {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 300;
+}
 .header {
-  min-height: 400px;
-  background: #909090 url('https://static.pexels.com/photos/7545/landscape-sunset-beach-sand.jpg');
+  min-height: 580px;
+  background: transparent url('../images/227.jpg') no-repeat top center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: 100%;
   color: #FFF;
-  margin-bottom: 50px;
 }
-.header .well {
-  border: 1px solid black;
-  border-radius: 4px;
-  padding: 20px 5px;
-  margin-top: 50px;
+.header h1, .header h2 {
+  color: #fff;
 }
-.typeforms .typeform {
+.header h1 {
+  margin-top: 200px;
+  font-size: 4.375em;
+  line-height: 1.1em;
+}
+.header h2 {
+  font-size: 1.75em;
+  line-height: 2em;
+}
+.header row {
+
+}
+.survey .typeform, .survey {
   width: 100%;
   height: 100%;
   height: 100vh;
@@ -18,14 +34,134 @@
   border: none;
   overflow: hidden;
 }
-
+.typeforms {
+  z-index: 2;
+  position: relative;
+  background-color: #fff;
+}
+.typeforms h3 {
+  margin: 100px auto;
+  text-align: center;
+  font-size: 3em;
+}
 .typeforms .card {
   cursor: pointer;
+  border: none;
+  box-shadow: 0 0 2px 0 rgba(0,0,0,0.12), 0 2px 2px 0 rgba(0,0,0,0.24);
 }
-.typeforms .col-md-4 .card {
-  min-height: 300px;
+.card-title {
+  margin-bottom: 0;
+}
+.card .header-top {
+  border-top-left-radius: 2px;
+  border-top-right-radius: 2px;
+
+  text-align: left;
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 1.125em;
+}
+.card .card-title {
+  font-weight: 600;
+}
+.card .header-color {
+  min-height: 120px;
+}
+.card .header-text {
+  padding: 30px 1.25em 30px;
+  color: #4A4A4A;
+  min-height: 190px;;
+  font-size: 1.5em;
+  line-height: 1.8em;
+}
+.card .header-share {
+  border-top: 1px solid #E0E0E0;
+  text-align: right;
+}
+.card .header-share i {
+  color: #9B9B9B;
+  font-size: 1.5em;
+}
+.card .header-share .fa-facebook:hover {
+  color: #3b5998;
+}
+.card .header-share .fa-twitter:hover {
+  color: #4099FF;
+}
+.card .header-share .fa-linkedin:hover {
+  color: #0077B5;
+}
+.header-top.blue {
+  background-color: #1E85D9;
+}
+.header-color.blue {
+  background-color: #2196F3;
 }
 
+.header-top.green {
+  background-color: #007D70;
+}
+.header-color.green {
+  background-color: #009688;
+}
+
+.header-top.red {
+  background-color: #CF1B57;
+}
+.header-color.red {
+  background-color: #E91E63;
+}
+
+
+.back {
+  position: fixed;
+  background-color: white;
+  width: 100%;
+}
 .footer {
 
+}
+
+.ui-view-container {
+  position: relative;
+}
+
+[ui-view].ng-enter, [ui-view].ng-leave {
+  position: absolute;
+  left: 0;
+  right: 0;
+  -webkit-transition:all .5s ease-in-out;
+  -moz-transition:all .5s ease-in-out;
+  -o-transition:all .5s ease-in-out;
+  transition:all .5s ease-in-out;
+}
+
+[ui-view].ng-enter {
+  opacity: 0;
+  -webkit-transform:scale3d(0.5, 0.5, 0.5);
+  -moz-transform:scale3d(0.5, 0.5, 0.5);
+  transform:scale3d(0.5, 0.5, 0.5);
+}
+
+[ui-view].ng-enter-active {
+  opacity: 1;
+  -webkit-transform:scale3d(1, 1, 1);
+  -moz-transform:scale3d(1, 1, 1);
+  transform:scale3d(1, 1, 1);
+}
+
+[ui-view].ng-leave {
+  opacity: 1;
+  /*padding-left: 0px;*/  
+  -webkit-transform:translate3d(0, 0, 0);
+  -moz-transform:translate3d(0, 0, 0);
+  transform:translate3d(0, 0, 0);
+}
+
+[ui-view].ng-leave-active {
+  opacity: 0;
+  /*padding-left: 100px;*/
+  -webkit-transform:translate3d(100px, 0, 0);
+  -moz-transform:translate3d(100px, 0, 0);
+  transform:translate3d(100px, 0, 0);
 }

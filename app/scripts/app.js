@@ -45,45 +45,56 @@ angular
         title:'Tester',
         description: 'I want to test new digital products',
         link:'https://idealabsteam.typeform.com/to/MU2yKh',
-        image: 'https://static.pexels.com/photos/154/people-apple-iphone-writing-large.jpg'
+        color: 'blue'
       },
       {
         id:'2',
         title: 'Company',
         description:'I\'m a company looking for new digital products', 
-        
-        link:''
+        link:'https://idealabsteam.typeform.com/to/MU2yKh',
+        color: 'green'
       },
       {
         id:'3', 
         title: 'Jobs',
         description:'I want to work for startups', 
-        link:'',
-        image: 'https://static.pexels.com/photos/7369/startup-photos.jpg'
+        link:'https://idealabsteam.typeform.com/to/MU2yKh',
+        color: 'red'
       },
       {
         id:'4', 
-        title:'I know someone you really should meet', 
-        link:''
+        title: 'Connection',
+        description:'I know someone you really should meet', 
+        link:'https://idealabsteam.typeform.com/to/MU2yKh',
+        color: 'blue'
       },
       {
         id:'5', 
-        subtitle:'Mentor',
+        title:'Mentor',
         description:'I would be a good mentor for a startup',
-        link:'',
-        image: 'https://static.pexels.com/photos/527/man-person-people-train.jpg'
+        link:'https://idealabsteam.typeform.com/to/MU2yKh',
+        color: 'green'
       },
       {
         id:'6', 
-        title:'I would like to invest in startups',
-        subtitle:'Investor',
-        link:'',
-        image: 'https://static.pexels.com/photos/1334/businessman-fashion-suit-jacket-large.jpg'
+        title:'Investor',
+        description:'I would like to invest in startups',
+        link:'https://idealabsteam.typeform.com/to/MU2yKh',
+        color: 'red'
       },
       {
         id:'7', 
-        title:'I would like to partner up with idealabs', 
-        link:''
+        title: 'Partner',
+        description:'I would like to partner up with idealabs', 
+        link:'https://idealabsteam.typeform.com/to/MU2yKh',
+        color: 'blue'
       },
+      {
+        id: '8',
+        title:'Good guy greg',
+        description:'I just like to fill in surveys', 
+        link: 'https://idealabsteam.typeform.com/to/MU2yKh',
+        color: 'green'
+      }
     ];
   });

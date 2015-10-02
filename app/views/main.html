@@ -1,36 +1,27 @@
-    <div class="fluid-container header">
-      <div class="container">
-        <div class="row text-center">
-          <div class="col-sm-6 col-sm-offset-3 col-xs-12">
-            <div class="well text-center well-lg">
-              <h1 class="page-header">This is a heading.</h1>
-              <p style>Enter your paragraph text here.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-<div class="container typeforms" id="surveys" data-ng-controller='MainCtrl'>
-  <div class="row text-center">
-    <div class="col-sm-6 col-md-4 col-lg-3" ng-repeat="survey in surveys" ng-click="open(survey)">
-      <div class="card">
-        <img class="card-img-top" ng-src="{{survey.image || 'http://cumbrianrun.co.uk/wp-content/uploads/2014/02/default-placeholder.png'}}" alt="Card image cap" width="100%" height="150px">
-        <div class="card-block">
-          <h4 class="card-title">{{survey.title}}</h4>
-          <h6 class="card-subtitle text-muted">{{survey.subtitle}}</h6>
-          <p class="card-text">{{survey.description}}</p>
-        </div>
-      </div>
+<div class="fluid-container header">
+  <div class="container">
+    <div class="row text-center">
+      <h1>Be part of the idealabs community</h1>
+      <h2>Bringing startups and customers closer together.</h2>
     </div>
   </div>
-  <div class="row text-center">
-    <div class="col-xs-12">
+</div>
+
+<div class="container typeforms" id="surveys" data-ng-controller='MainCtrl'>
+  <h3>Plenty of surveys to fill in</h3>
+  <div class="row">
+    <div class="col-xs-6 col-md-4" ng-repeat="survey in surveys" ng-click="open(survey)">
       <div class="card">
-        <div class="card-block">
-          <h4 class="card-title">Card title</h4>
-          <h6 class="card-subtitle text-muted">Support card subtitle</h6>
-          <p class="card-text">I just like to fill in surveys</p>
+        <div class="card-block header-top {{survey.color}}" ng-class="{{survey.color}}">
+          <h4 class="card-title">{{survey.title}}</h4>
+        </div>
+        <div class="card-block header-color {{survey.color}}" ng-class="{{survey.color}}">
+        </div>
+        <div class="card-block header-text">
+          <p class="card-text">{{survey.description}}</p>
+        </div>
+        <div class="card-block header-share">
+          <i class="fa fa-fw fa-linkedin" ng-click='$event.preventDefault(); $event.stopPropagation(); linkedin(survey)'></i> <i class="fa fa-fw fa-twitter" ng-click='$event.preventDefault(); $event.stopPropagation(); twitter(survey)'></i> <i class="fa fa-fw fa-facebook" ng-click='$event.preventDefault(); $event.stopPropagation(); facebook(survey)'></i>
         </div>
       </div>
     </div>
