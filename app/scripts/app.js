@@ -50,7 +50,7 @@ angular
       {
         id:'2',
         title: 'Company',
-        description:'I\'m a company looking for new digital products', 
+        description:'My company is looking for new digital products', 
         link:'https://idealabsteam.typeform.com/to/MU2yKh',
         color: 'green'
       },

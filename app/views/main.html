@@ -1,4 +1,6 @@
-<div class="fluid-container header">
+
+<div class="fluid-container header"></div>
+<div class="fluid-container header" style="position:fixed; top:0; width: 100%">
   <div class="container">
     <div class="row text-center">
       <h1>Be part of the idealabs community</h1>
@@ -7,21 +9,23 @@
   </div>
 </div>
 
-<div class="container typeforms" id="surveys" data-ng-controller='MainCtrl'>
-  <h3>Plenty of surveys to fill in</h3>
-  <div class="row">
-    <div class="col-xs-6 col-md-4" ng-repeat="survey in surveys" ng-click="open(survey)">
-      <div class="card">
-        <div class="card-block header-top {{survey.color}}" ng-class="{{survey.color}}">
-          <h4 class="card-title">{{survey.title}}</h4>
-        </div>
-        <div class="card-block header-color {{survey.color}}" ng-class="{{survey.color}}">
-        </div>
-        <div class="card-block header-text">
-          <p class="card-text">{{survey.description}}</p>
-        </div>
-        <div class="card-block header-share">
-          <i class="fa fa-fw fa-linkedin" ng-click='$event.preventDefault(); $event.stopPropagation(); linkedin(survey)'></i> <i class="fa fa-fw fa-twitter" ng-click='$event.preventDefault(); $event.stopPropagation(); twitter(survey)'></i> <i class="fa fa-fw fa-facebook" ng-click='$event.preventDefault(); $event.stopPropagation(); facebook(survey)'></i>
+<div class="fluid-container typeforms" id="surveys" data-ng-controller='MainCtrl'>
+  <div class="container">
+    <h3>Plenty of surveys to fill in</h3>
+    <div class="row">
+      <div class="col-xs-12 col-md-4" ng-repeat="survey in surveys" ng-click="open(survey)">
+        <div class="card">
+          <div class="card-block header-top {{survey.color}}" ng-class="{{survey.color}}">
+            <h4 class="card-title">{{survey.title}}</h4>
+          </div>
+          <div class="card-block header-color {{survey.color}}" ng-class="{{survey.color}}">
+          </div>
+          <div class="card-block header-text">
+            <p class="card-text">{{survey.description}}</p>
+          </div>
+          <div class="card-block header-share">
+            <i class="fa fa-fw fa-linkedin" ng-click='$event.preventDefault(); $event.stopPropagation(); linkedin(survey)'></i> <i class="fa fa-fw fa-twitter" ng-click='$event.preventDefault(); $event.stopPropagation(); twitter(survey)'></i> <i class="fa fa-fw fa-facebook" ng-click='$event.preventDefault(); $event.stopPropagation(); facebook(survey)'></i>
+          </div>
         </div>
       </div>
     </div>
