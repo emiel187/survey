@@ -1,24 +1,27 @@
 
-<div class="fluid-container header"></div>
+<div class="fluid-container header">
+</div>
 <div class="fluid-container header" style="position:fixed; top:0; width: 100%">
+  <img src="images/idealabs.png">
   <div class="container">
     <div class="row text-center">
-      <h1>Be part of the idealabs community</h1>
-      <h2>Bringing startups and customers closer together.</h2>
+      <h1>Join the idealabs community</h1>
+      <h2>Get in touch!</h2>
     </div>
   </div>
 </div>
 
 <div class="fluid-container typeforms" id="surveys" data-ng-controller='MainCtrl'>
   <div class="container">
-    <h3>Plenty of surveys to fill in</h3>
+    <h3>I'm here to ...</h3>
     <div class="row">
-      <div class="col-xs-12 col-md-4" ng-repeat="survey in surveys" ng-click="open(survey)">
+      <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4" ng-repeat="survey in surveys" ng-click="open(survey)">
         <div class="card">
           <div class="card-block header-top {{survey.color}}" ng-class="{{survey.color}}">
             <h4 class="card-title">{{survey.title}}</h4>
           </div>
           <div class="card-block header-color {{survey.color}}" ng-class="{{survey.color}}">
+            <img src="images/{{survey.image}}.png" class="img-responsive">
           </div>
           <div class="card-block header-text">
             <p class="card-text">{{survey.description}}</p>

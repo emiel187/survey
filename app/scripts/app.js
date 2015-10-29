@@ -42,59 +42,51 @@ angular
     $rootScope.surveys = [
       {
         id:'1', 
-        title:'Tester',
-        description: 'I want to test new digital products',
+        title:'try new digital products!',
+        description: 'Be one of the first to test new products and services, even before they are open to the public!',
         link:'https://idealabsteam.typeform.com/to/MU2yKh',
+        image: 'laptop',
         color: 'blue'
       },
       {
         id:'2',
-        title: 'Company',
-        description:'My company is looking for new digital products', 
+        title: 'get hired!',
+        description:'The startups are growing and are in need for talent. Don’t miss out on the job posts from up and coming startups!', 
         link:'https://idealabsteam.typeform.com/to/MU2yKh',
+        image: 'connection',
         color: 'green'
       },
       {
         id:'3', 
-        title: 'Jobs',
-        description:'I want to work for startups', 
+        title: 'connect you!',
+        description:'Do you know someone we should definitely meet? Let’s talk!', 
         link:'https://idealabsteam.typeform.com/to/MU2yKh',
+        image: 'laptop',
         color: 'red'
       },
       {
         id:'4', 
-        title: 'Connection',
-        description:'I know someone you really should meet', 
+        title: 'invest in startups!',
+        description:'Startups are always looking for funding. Don’t miss your chance and invest early on.', 
         link:'https://idealabsteam.typeform.com/to/MU2yKh',
-        color: 'blue'
+        image: 'connection',
+        color: 'green'
       },
       {
         id:'5', 
-        title:'Mentor',
-        description:'I would be a good mentor for a startup',
+        title:'join the mentor network!',
+        description:'We are looking to grow our mentor network focusing on quality rather than quantity.',
         link:'https://idealabsteam.typeform.com/to/MU2yKh',
-        color: 'green'
-      },
-      {
-        id:'6', 
-        title:'Investor',
-        description:'I would like to invest in startups',
-        link:'https://idealabsteam.typeform.com/to/MU2yKh',
+        image: 'laptop',
         color: 'red'
       },
       {
-        id:'7', 
-        title: 'Partner',
-        description:'I would like to partner up with idealabs', 
+        id:'6', 
+        title:'partner with you!',
+        description:'We are open for partnering opportunities. So if you think we should work together, let us know.',
         link:'https://idealabsteam.typeform.com/to/MU2yKh',
+        image: 'laptop',
         color: 'blue'
-      },
-      {
-        id: '8',
-        title:'Good guy greg',
-        description:'I just like to fill in surveys', 
-        link: 'https://idealabsteam.typeform.com/to/MU2yKh',
-        color: 'green'
       }
     ];
   });

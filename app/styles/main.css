@@ -5,6 +5,7 @@ html, body {
 .header {
   min-height: 580px;
   background: transparent url('../images/227.jpg') no-repeat top center fixed;
+  /*background: transparent url('https://static.pexels.com/photos/9754/mountains-clouds-forest-fog.jpg') no-repeat top center fixed;*/
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -15,7 +16,6 @@ html, body {
   color: #fff;
 }
 .header h1 {
-  margin-top: 200px;
   font-size: 4.375em;
   line-height: 1.1em;
 }
@@ -49,14 +49,18 @@ html, body {
   border: none;
   box-shadow: 0 0 2px 0 rgba(0,0,0,0.12), 0 2px 2px 0 rgba(0,0,0,0.24);
 }
+.card h4 {
+  font-size: 1.2rem;
+}
 .card-title {
   margin-bottom: 0;
 }
 .card .header-top {
   border-top-left-radius: 2px;
   border-top-right-radius: 2px;
+  min-height: 80px;
 
-  text-align: left;
+  text-align: center;
   text-transform: uppercase;
   color: #fff;
   font-size: 1.125em;
@@ -67,12 +71,15 @@ html, body {
 .card .header-color {
   min-height: 120px;
 }
+.card .header-color img {
+  margin: auto;
+}
 .card .header-text {
   padding: 30px 1.25em 30px;
   color: #4A4A4A;
-  min-height: 190px;;
-  font-size: 1.5em;
-  line-height: 1.8em;
+  min-height: 190px;
+  font-size: 1.3em;
+  line-height: 1.5em;
 }
 .card .header-share {
   border-top: 1px solid #E0E0E0;
@@ -171,10 +178,9 @@ html, body {
     background-position: top center;
     background-size: 250%;
   }
-  .header h1 {
-    margin-top: 100px;
+  .card .header-top {
+    min-height: 60px;
   }
-
   .card .header-text {
     min-height: 0;
   }
@@ -182,12 +188,12 @@ html, body {
 
 @media (min-width: 48em) {
   .card .header-text {
-    min-height: 240px;
+    min-height: 220px;
   }
 }
 
-@media (min-width: 62em) {
-  .card .header-text {
-    min-height: 190px;
+@media (min-width: 75em) {
+  .card .header-top {
+    min-height: 60px;
   }
 }
