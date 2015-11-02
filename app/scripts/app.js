@@ -44,8 +44,8 @@ angular
         id:'1', 
         title:'try new digital products!',
         description: 'Be one of the first to test new products and services, even before they are open to the public!',
-        link:'https://idealabsteam.typeform.com/to/MU2yKh',
-        image: 'laptop',
+        link:'https://idealabsteam.typeform.com/to/AMXwGi',
+        image: 'products',
         color: 'blue'
       },
       {
@@ -53,7 +53,7 @@ angular
         title: 'get hired!',
         description:'The startups are growing and are in need for talent. Don’t miss out on the job posts from up and coming startups!', 
         link:'https://idealabsteam.typeform.com/to/MU2yKh',
-        image: 'connection',
+        image: 'jobs',
         color: 'green'
       },
       {
@@ -61,7 +61,7 @@ angular
         title: 'connect you!',
         description:'Do you know someone we should definitely meet? Let’s talk!', 
         link:'https://idealabsteam.typeform.com/to/MU2yKh',
-        image: 'laptop',
+        image: 'connection',
         color: 'red'
       },
       {
@@ -69,7 +69,7 @@ angular
         title: 'invest in startups!',
         description:'Startups are always looking for funding. Don’t miss your chance and invest early on.', 
         link:'https://idealabsteam.typeform.com/to/MU2yKh',
-        image: 'connection',
+        image: 'investor',
         color: 'green'
       },
       {
@@ -77,7 +77,7 @@ angular
         title:'join the mentor network!',
         description:'We are looking to grow our mentor network focusing on quality rather than quantity.',
         link:'https://idealabsteam.typeform.com/to/MU2yKh',
-        image: 'laptop',
+        image: 'network',
         color: 'red'
       },
       {
@@ -85,7 +85,7 @@ angular
         title:'partner with you!',
         description:'We are open for partnering opportunities. So if you think we should work together, let us know.',
         link:'https://idealabsteam.typeform.com/to/MU2yKh',
-        image: 'laptop',
+        image: 'partner',
         color: 'blue'
       }
     ];
